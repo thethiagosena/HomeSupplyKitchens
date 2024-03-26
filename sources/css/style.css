@@ -1,36 +1,39 @@
-@charset "UTF-8";
+/* --- General Sets --- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-div{
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: darkblue;
+    color: white;
+
+
+    padding: 20px;
+
+}
+
+.nav-list {
+    list-style: none;
+
+}
+
+.nav-list .list-items {
     display: inline-block;
-    background-color: lightgray;
-    border: 1px solid black;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 25pt;    
-    height: 200px;
-    width: 200px; 
 }
 
-#d1:hover{
-    background-color: brown;
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
 }
 
-#d2:hover{
-    background-color:blue;
-}
-
-#d3:hover{
-    background-color: purple;
-}
-
-div::first-letter{
-    font-size: 50pt;
-}
-
-.especial::after{
-    content: 'depois';
-}
-
-.especial::before{
-    content: 'antes';
+.nav-bar a:hover{
+    text-decoration: underline;
+    color: aqua;
 }
