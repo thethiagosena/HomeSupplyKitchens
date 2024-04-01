@@ -162,7 +162,7 @@ footer{
     position: relative;
     display: block;
     background-color: #99092f;
-    background-image: url("/HomeSupplyKitchens/imagens/Schuller/web-72dpi/CLC-L277M_Auszug-1_2021.jpg");
+    background-image: url("./imagens/Schuller/web-72dpi/CLC-L277M_Auszug-1_2021.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
