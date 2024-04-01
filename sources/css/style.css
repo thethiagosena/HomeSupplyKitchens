@@ -106,9 +106,6 @@ div {
 
     .logo {
         width:100%;
-        display: flex;
-        justify-content: center;
-        padding-right: 30px;
     }
 
     .active{
