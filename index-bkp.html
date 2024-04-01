@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchens | by HomeSupply</title>
+    <link rel="stylesheet" href="sources/css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="menu-div">
+            <div class="logo">
+                <a href="#"><img class="company-logo" src="logos/company-logo.png" alt="company logo"></a>
+            </div>
+            
+            <ul class="nav-list" id="navList">
+                <li class="list-items">
+                    <a href="">Home</a>
+                </li>
+                <li class="list-items">
+                    <a href="">Colombini</a>
+                </li>
+                <li class="list-items">
+                    <a href="">Beckermann</a>
+                </li>
+                <li class="list-items">
+                    <a href="">Schuller</a>
+                </li>
+                <li class="list-items">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-hamburguer" id="toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>    
+</body>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const navList = document.getElementById('navList');
+
+    toggleButton.addEventListener('click', ()=>{
+        navList.classList.toggle('active');
+    })
+</script>
+</html>
