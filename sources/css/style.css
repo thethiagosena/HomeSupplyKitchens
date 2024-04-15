@@ -94,25 +94,28 @@ footer{
 }
 
 .nav-list {
-    list-style: none;
-
+    list-style: none;    
 }
 
 .nav-list .list-items {
     display: inline-block;
+    margin: auto;
+
 }
 
 .nav-bar a {
     text-decoration: none;
     color: var(--darkGrey);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
     padding: 0px 10px;
+    font-weight: 500;    
+
     
 }
 
 .nav-bar a:hover{
     color: var(--mainColour);
-    font-weight: bolder;    
+    /* font-weight: bolder;     */
 }
 
 
