@@ -71,6 +71,7 @@ footer{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 /* ----------------------- */
@@ -85,9 +86,14 @@ footer{
     height: 143px;
 }
 
+.logo {
+    display: flex;
+    
+}
+
 .menu-div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: var(--maxWidthLaptop);
