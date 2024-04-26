@@ -8,7 +8,7 @@
 
     /* --- Device Measurements --- */
     --maxWidthTvs: 1024px;
-    --maxWidthLaptop: 1024px;
+    --maxWidthLaptop: 1400px;
     --maxWidthTablet: 768px;
     --maxWidthMobile: 480px;
 
@@ -71,7 +71,7 @@ footer{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* ----------------------- */
@@ -170,13 +170,13 @@ footer{
 .main-banner-images {
     position: relative;
     display: block;
-    background-color: #99092f;
-    background-image: url('../../sources/imagens/Schuller/web-72dpi/CLC-L277M_Auszug-1_2021.jpg');
+    /* background-color: #99092f;
+    background-image: url('../../sources/banners/main-slideshow/banner01.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 
-    height: 600px;
+    height: 640px;
     width: 100%;
     max-width: var(--maxWidthLaptop);    
 
