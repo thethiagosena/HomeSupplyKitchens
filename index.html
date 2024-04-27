@@ -103,62 +103,58 @@
 
     <section class="main-products">
         <div class="main-products-content">
-            <!-- Container for the image gallery -->
-            <div class="p01SlideshowContainer">
-                   <!-- Full-width images -->
-                    <div class="p01SlideShow">
-                        <img src="/sources/banners/product-slideshow01/single-oh-k.jpg" style="width:100%">
-                    </div>
-                    <div class="p01SlideShow">
-                        <img src="/sources/banners/product-slideshow01/Arcadia-K.jpg" style="width:100%">
-                    </div>
-                    <div class="p01SlideShow">
-                        <img src="/sources/banners/product-slideshow01/double-oh-k-cr.jpg" style="width:100%">
-                    </div>
-                    <div class="p01SlideShow">
-                        <img src="/sources/banners/product-slideshow01/Library-k-grn.jpg" style="width:100%">
-                    </div>
-                    <div class="p01SlideShow">
-                        <img src="/sources/banners/product-slideshow01/oh-blue-k.jpg" style="width:100%">
-                    </div>
-                    <div class="p01SlideShow">
-                        <img src="/sources/banners/product-slideshow01/ponti-k-bridge.jpg" style="width:100%">
-                    </div>
-                    
-                    <!-- Next and previous buttons -->
-                    <a class="prevP01" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="nextP01" onclick="plusSlides(1)">&#10095;</a>
+            <div class="product01">
+                <!-- Container for the image gallery -->
+                <div class="p01SlideshowContainer">
+                       <!-- Full-width images -->
+                        <div class="p01SlideShow fade">
+                            <img src="/sources/banners/product-slideshow01/product-slideshow-01.jpg" style="width:100%">
+                        </div>
+                        <div class="p01SlideShow fade">
+                            <img src="/sources/banners/product-slideshow01/product-slideshow-02.jpg" style="width:100%">
+                        </div>
+                        <div class="p01SlideShow fade">
+                            <img src="/sources/banners/product-slideshow01/product-slideshow-03.jpg" style="width:100%">
+                        </div>
+                        <div class="p01SlideShow fade">
+                            <img src="/sources/banners/product-slideshow01/product-slideshow-04.jpg" style="width:100%">
+                        </div>
+                        <div class="p01SlideShow fade">
+                            <img src="/sources/banners/product-slideshow01/product-slideshow-05.jpg" style="width:100%">
+                        </div>
+                        <div class="p01SlideShow fade">
+                            <img src="/sources/banners/product-slideshow01/product-slideshow-06.jpg" style="width:100%">
+                        </div>
+                
+                        <!-- Next and previous buttons -->
+                        <a class="prevP01" onclick="plusSlidesP01(-1)">&#10094;</a>
+                        <a class="nextP01" onclick="plusSlidesP01(1)">&#10095;</a>
+                          <!-- Thumbnail images -->
+                        <div class="rowP01">
+                            <div class="columnP01">
+                              <img class="demoP01 cursorP01" src="/sources/banners/product-slideshow01/product-slideshow-01.jpg" style="width:100%" onclick="currentSlideP01(1)" alt="">
+                            </div>
+                
+                            <div class="columnP01">
+                              <img class="demoP01 cursorP01" src="/sources/banners/product-slideshow01/product-slideshow-02.jpg" style="width:100%" onclick="currentSlideP01(2)" alt="">
+                            </div>
+                
+                            <div class="columnP01">
+                              <img class="demoP01 cursorP01" src="/sources/banners/product-slideshow01/product-slideshow-03.jpg" style="width:100%" onclick="currentSlideP01(3)" alt="">
+                            </div>
+                            <div class="columnP01">
+                              <img class="demoP01 cursorP01" src="/sources/banners/product-slideshow01/product-slideshow-04.jpg" style="width:100%" onclick="currentSlideP01(4)" alt="">
+                            </div>
+                
+                            <div class="columnP01">
+                              <img class="demoP01 cursorP01" src="/sources/banners/product-slideshow01/product-slideshow-05.jpg" style="width:100%" onclick="currentSlideP01(5)" alt="">
+                            </div>
 
-                      <!-- Thumbnail images -->
-                    <div class="rowP01">
-                        <div class="columnP01">
-                          <img class="demoP01 cursorP01" src="/sources/banners/product-slideshow01/single-oh-k.jpg" style="width:100%" onclick="currentSlidep01(1)" alt="">
-                        </div>                        
-                    </div>
-
-                    <div class="rowP01">
-                        <div class="columnP01">
-                          <img class="P cursorP01" src="/sources/banners/product-slideshow01/Arcadia-K.jpg" style="width:100%" onclick="currentSlidep01(2)" alt="">
-                        </div>                        
-                    </div>
-
-                    <div class="rowP01">
-                        <div class="columnP01">
-                          <img class="P cursorP01" src="/sources/banners/product-slideshow01/Library-k-grn.jpg" style="width:100%" onclick="currentSlidep01(3)" alt="">
-                        </div>                        
-                    </div>
-
-                    <div class="rowP01">
-                        <div class="columnP01">
-                          <img class="P cursorP01" src="/sources/banners/product-slideshow01/oh-blue-k.jpg" style="width:100%" onclick="currentSlidep01(4)" alt="">
-                        </div>                        
-                    </div>
-
-                    <div class="rowP01">
-                        <div class="columnP01">
-                          <img class="P cursorP01" src="/sources/banners/product-slideshow01/ponti-k-bridge.jpg" style="width:100%" onclick="currentSlidep01(5)" alt="">
-                        </div>                        
-                    </div>
+                            <div class="columnP01">
+                                <img class="demoP01 cursorP01" src="/sources/banners/product-slideshow01/product-slideshow-06.jpg" style="width:100%" onclick="currentSlideP01(6)" alt="">
+                              </div>
+                        </div>
+            </div>
                     
             </div>
 
@@ -178,9 +174,10 @@
 
 
     <!-- 2nd product slideshow -->
-
     <section class="main-products">
         <div class="main-products-content">
+            
+            <!-- Product text -->
             <div class="product-brand-description">
                 <h1>Title</h1>
                 <hr>
@@ -190,22 +187,64 @@
                 <br>
                 <button>Explore</button>
             </div>
-            <div class="product-image-gallery">
-                <div class="main-gallery-image">
-                    
-                </div>
-                <div class="thumbnails-gallery-image-container">
-                    <div class="gallery-thumbnail"></div>
-                    <div class="gallery-thumbnail"></div>
-                    <div class="gallery-thumbnail"></div>
-                    <div class="gallery-thumbnail"></div>
-                    <div class="gallery-thumbnail"></div>
-                    <div class="gallery-thumbnail"></div>
-                </div>
-            </div>
             
+            <div class="product02">
+                <!-- Container for the image gallery -->
+                <div class="p02SlideshowContainer">
+                       <!-- Full-width images -->
+                        <div class="p02SlideShow fade">
+                            <img src="/sources/banners/product-slideshow02/product-slideshow-01.jpg" style="width:100%">
+                        </div>
+                        <div class="p02SlideShow fade">
+                            <img src="/sources/banners/product-slideshow02/product-slideshow-02.jpg" style="width:100%">
+                        </div>
+                        <div class="p02SlideShow fade">
+                            <img src="/sources/banners/product-slideshow02/product-slideshow-03.jpg" style="width:100%">
+                        </div>
+                        <div class="p02SlideShow fade">
+                            <img src="/sources/banners/product-slideshow02/product-slideshow-04.jpg" style="width:100%">
+                        </div>
+                        <div class="p02SlideShow fade">
+                            <img src="/sources/banners/product-slideshow02/product-slideshow-05.jpg" style="width:100%">
+                        </div>
+                        <div class="p02SlideShow fade">
+                            <img src="/sources/banners/product-slideshow02/product-slideshow-06.jpg" style="width:100%">
+                        </div>
+                
+                        <!-- Next and previous buttons -->
+                        <a class="prevP02" onclick="plusSlidesP02(-1)">&#10094;</a>
+                        <a class="nextP02" onclick="plusSlidesP02(1)">&#10095;</a>
+                          <!-- Thumbnail images -->
+                        <div class="rowP02">
+                            <div class="columnP02">
+                              <img class="demoP02 cursorP02" src="/sources/banners/product-slideshow02/product-slideshow-01.jpg" style="width:100%" onclick="currentSlideP02(1)" alt="">
+                            </div>
+                
+                            <div class="columnP02">
+                              <img class="demoP02 cursorP02" src="/sources/banners/product-slideshow02/product-slideshow-02.jpg" style="width:100%" onclick="currentSlideP02(2)" alt="">
+                            </div>
+                
+                            <div class="columnP02">
+                              <img class="demoP02 cursorP02" src="/sources/banners/product-slideshow02/product-slideshow-03.jpg" style="width:100%" onclick="currentSlideP02(3)" alt="">
+                            </div>
+                            <div class="columnP02">
+                              <img class="demoP02 cursorP02" src="/sources/banners/product-slideshow02/product-slideshow-04.jpg" style="width:100%" onclick="currentSlideP02(4)" alt="">
+                            </div>
+                
+                            <div class="columnP02">
+                              <img class="demoP02 cursorP02" src="/sources/banners/product-slideshow02/product-slideshow-05.jpg" style="width:100%" onclick="currentSlideP02(5)" alt="">
+                            </div>
+    
+                            <div class="columnP02">
+                                <img class="demoP02 cursorP02" src="/sources/banners/product-slideshow02/product-slideshow-06.jpg" style="width:100%" onclick="currentSlideP02(6)" alt="">
+                              </div>
+                        </div>
+            </div>
+                    
+            </div>
+    
         </div>
-
+    
     </section>
 
 

@@ -1,0 +1,101 @@
+
+/* --------------- */
+/* Images Slideshow Product 02 */
+/* --------------- */
+
+
+/* Hide the images by default */
+.main-products-content{
+    display: flex;
+    flex-wrap: nowrap;
+    gap:1em;
+    max-width: var(--maxWidthLaptop);
+    margin: auto;  
+    margin-top: 40px;
+  
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .p02SlideshowContainer {
+      position: relative;    
+      width: 795px;
+      
+    }
+    
+    /* Hide the images by default */
+    .p02SlideShow {
+      position: relative;
+      display: none;  
+      height: 318px;
+      overflow: hidden;
+      margin-bottom: 10px;;
+    }
+    
+    .p02SlideShow img {
+      width: 100%;
+      position: absolute;
+      top: -30%;
+    }
+  
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursorP02 {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prevP02,
+    .nextP02 {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .nextP02 {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prevP02:hover,
+    .nextP02:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    
+    .rowP02:after {
+      content: "";
+      display: table;
+      clear: both;    
+    }
+    
+    /* Six columns side by side */
+    .columnP02 {
+      float: left;
+      width: 16.6%;
+      height: 80px;
+      overflow: hidden;
+      border: 3px solid white;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demoP02 {
+      opacity: 0.6;
+    }
+    
+    .activeP02,
+    .demoP02:hover {
+      opacity: 1;
+    }
+  
+  
