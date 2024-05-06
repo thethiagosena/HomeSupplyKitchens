@@ -11,6 +11,7 @@
     --maxWidthLaptop: 1400px;
     --maxWidthTablet: 768px;
     --maxWidthMobile: 480px;
+    --screenSize:1400px;
 
     /* --- Font Families --- */
     --titles: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,7 +44,7 @@ hr {
 p {
    color: var(--darkGrey); 
    padding: 0px 30px;
-   font-size: 16px;
+   font-size: 14px;
    font-family: var(--paragraphs);   
 }
 
@@ -367,101 +368,215 @@ div {
 
 /* Position the image container (needed to position the left and right arrows) */
 .p02SlideshowContainer {
-    position: relative;    
-    width: 795px;
-    
-  }
+  position: relative;    
+  width: 795px;
+}
   
-  /* Hide the images by default */
-  .p02SlideShow {
-    position: relative;
-    display: none;  
-    height: 318px;
-    overflow: hidden;
-    margin-bottom: 10px;;
-  }
+/* Hide the images by default */
+.p02SlideShow {
+  position: relative;
+  display: none;  
+  height: 318px;
+  overflow: hidden;
+  margin-bottom: 10px;;
+}
   
-  .p02SlideShow img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.p02SlideShow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
-  .columnP02 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.columnP02 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursorP02 {
-    cursor: pointer;
-  }
+/* Add a pointer when hovering over the thumbnail images */
+.cursorP02 {
+  cursor: pointer;
+}
   
-  /* Next & previous buttons */
-  .prevP02,
-  .nextP02 {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    transition: 0.6s ease;
-    -webkit-user-select: none;
-  }
+/* Next & previous buttons */
+.prevP02, .nextP02 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+}
   
-  /* Position the "next button" to the right */
-  .nextP02 {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+/* Position the "next button" to the right */
+.nextP02 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prevP02:hover,
-  .nextP02:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+/* On hover, add a black background color with a little bit see-through */
+.prevP02:hover, .nextP02:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.rowP02:after {
+  content: "";
+  display: table;
+  clear: both;    
+}
+
+/* Six columns side by side */
+.columnP02 {
+  float: left;
+  width: 16.6%;
+  height: 80px;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demoP02 {
+  opacity: 0.6;
+}
+
+.activeP02, .demoP02:hover {
+  opacity: 1;
+}
+
+
+/* ----------------------------
+----- Product Highliht -----
+----------------------------  */
+
+
+.product-highlight{
+  background-image: url("../images/Colombini-Images/Golf-Living/IMG---79.JPG");
+  background-position:center;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.image-highlight{
+  max-width: var(--maxWidthLaptop);
+  margin: auto;
+  height: 820px;
+}
+
+.text-highlight{
+  background-color: var(--mainColour);
+  padding: 30px 50px;
+  margin: 50px;
+  width: 500px;  
+}
+
+.text-highlight>h1, .text-highlight>p{
+  color: white;
+  text-align: center;
+}
+
+.text-highlight>h1{
+  margin-bottom: 20px;
+}
+
+
+/* ----------------------------
+-------- Our Story --------
+----------------------------  */
+
+.ourStory{
+  display: flex;  
+  justify-content: center;  
+}
+
+.our-story-title{
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  background-color: #595959;
+  text-align: right;
+  padding: 0px 100px;
+}
+
+.our-story-title > h1{
+  color: white;
+}
+
+.our-story-text{
+  flex-grow: 1;
+  width: 50%;
+  padding: 30px;
+  padding-bottom: 70px;
+}
+
+.our-story-text > h1{
+  font-size: 20pt;
+  padding: 10px 25px;
+}
+
+.our-story-text > p{
+    padding: 10px 25px;
+    line-height: 2;
+    width: 80%;
+}
+
+
+/* ----------------------------
+----------- Brands -----------
+----------------------------  */
+
+.ourBrands{
+  display: flex;
+  margin: auto;
+  max-width: var(--screenSize);
   
-  
-  .rowP02:after {
-    content: "";
-    display: table;
-    clear: both;    
-  }
-  
-  /* Six columns side by side */
-  .columnP02 {
-    float: left;
-    width: 16.6%;
-    height: 80px;
-    overflow: hidden;
-    border: 3px solid white;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demoP02 {
-    opacity: 0.6;
-  }
-  
-  .activeP02,
-  .demoP02:hover {
-    opacity: 1;
-  }
+}
+
+.our-brands-title{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.our-brands-title > h1 {
+  margin-left: 15%;
+}
+
+.brands-logos{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logos{
+  width: 33%;
+}
+
+.logos >img{
+  display:block;
+  margin: auto;
+}
+
+
+/* ----------------------------
+----------- Footer -----------
+----------------------------  */
 
 
 
 /* ----------------------------------------- */
-
 /* --- Media Query --- */
-
 /* ----------------------------------------- */
 
 
