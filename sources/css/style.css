@@ -61,18 +61,11 @@ button {
 }
 
 
-footer{
-    height: 20px;
-
-}
-
-
 /* --- General Sets --- */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* border: 1px solid black; */
 }
 
 /* ----------------------- */
@@ -264,9 +257,9 @@ section {
  
 }
 
-div {
+/* div {
   border: 1px solid black;
-}
+} */
   
   /* Hide the images by default */
 .p01SlideShow {
@@ -573,6 +566,52 @@ div {
 ----------- Footer -----------
 ----------------------------  */
 
+
+.footer{
+  background-color: var(--mainColour);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+.footer-title{
+  background-color: var(--mainColour);   
+  padding: 10px;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.footer-title>h1{
+  text-align: center;
+  color: white;
+}
+
+.contacts{
+  width: 50%;
+  background-color: var(--mainColour);   
+  padding: 10px;
+  text-align: right;
+  color: white;
+  font-family: var(--paragraphs);
+  line-height: 2;
+}
+
+.contact-title{
+  font-weight: bold;
+}
+
+.social-medias{
+  width: 50%;
+  background-color: var(--mainColour);   
+  padding: 10px;
+  text-align: left;
+  color: white;
+  font-family: var(--paragraphs);
+  line-height: 2;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 
 /* ----------------------------------------- */
