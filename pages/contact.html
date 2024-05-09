@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | by HomeSupply</title>
+    <link rel="stylesheet" href="/sources/css/products.css">
+</head>
+<body>
+
+    <!-- Menu -->
+    <nav class="nav-bar">
+        <div class="menu-div">
+            <div class="logo">
+                <a href="#"><img class="company-logo" src="/logos/company-logo.webp" alt="company logo"></a>
+            </div>
+    
+            <ul class="nav-list" id="navList">
+                <li class="list-items">
+                    <div class="menu-upperline"></div>
+                    <a href="">Home</a>
+                </li>
+                <li class="list-items">
+                    <div class="menu-upperline"></div><a href="">Colombini</a>
+                </li>
+                <li class="list-items">
+                    <div class="menu-upperline"></div><a href="">Beckermann</a>
+                </li>
+                <li class="list-items">
+                    <div class="menu-upperline"></div><a href="">Schuller</a>
+                </li>
+                <li class="list-items">
+                    <div class="menu-upperline"></div><a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-hamburguer" id="toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+    <!-- Contact Infos-->
+
+    <section class="contact-text">
+        <div class="contact-text-container">
+            <h1>Contact</h1>
+            <br>            
+            <p>Do not hesitate to contact us and ask for further information to get in touch with our Team. We will help you overcome challenges with excitement, confident in winning them over together.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+
+<section class="contact-form-section">
+    <div class="contact-container">
+        <div class="contact-beintouch">
+            <div>
+                <h1>Be in Touch</h1>
+            </div>
+            <div>
+                <p>Phone</p>
+                <p>+44 7854 7854</p>
+            </div>
+            <div>
+                <p>E-mail</p>
+                <p>info@homesupply.co.uk</p>
+            </div>
+        </div>
+        <div class="contact-form-container">
+            <form action="" method="post" class="contact-form">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Type your name.">
+                <label>Last Name</label>
+                <input type="text" name="last-name" placeholder="Type your last name.">
+                <label>E-mail*</label>
+                <input type="text" name="e-mail" placeholder="Type your e-mail.">
+                <label>Message</label>
+                <textarea name="message" id=""></textarea>
+                <button type="submit">Send!</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- --- Footer --- -->
+
+    <footer class="footer">
+        <div class="footer-title">
+            <h1>Stay in touch</h1>
+        </div>
+        <div class="contacts">
+            <span class="contact-title">Contacts<br></span>
+            +44 123 456 789<br>
+            info@email.co.uk
+        </div>
+        <div class="social-medias">
+            Twitter<br>
+            Instagram<br>
+            Facebook
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- --- Hamburguer Menu Script --- -->
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const navList = document.getElementById('navList');
+
+    toggleButton.addEventListener('click', ()=>{
+        navList.classList.toggle('active');
+    })
+</script>
+</html>
