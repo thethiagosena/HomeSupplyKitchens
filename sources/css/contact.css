@@ -20,6 +20,11 @@
 
 /* --- Global Settings ---  */
 
+/* div {
+    border: 1px solid black;
+} */
+
+
 section {
     padding-bottom: 30px;
 }
@@ -129,9 +134,6 @@ button {
 
 }
 
-/* div {
-    border: 1px solid black;
-} */
 
 
 /* Menu hamburguer style */
@@ -163,21 +165,77 @@ button {
 /* --- Contact Form --- */
 /* --------------- */
 
-.contact-text-container{
+.contact-text-container, .contact-container {
     margin: auto;
     max-width: 1000px;
+    padding: 50px 0;
     text-align: left;
     line-height: 2;
     text-indent: 0px;
 }
 
 
-.contact-form-section{
-    background-color: var(--lightGrey);
-    padding: 40px;
+.contacts-info{
+    display: flex;
 }
 
+.contacts-phone, .contacts-email{
+    width: 50%;
+    text-align: left;
+}
 
+.contact-form-bg{
+    background-color: var(--lightGrey);
+    padding: 40px;
+    width: 97%;
+    margin: auto;
+}
+
+.contact-container span {
+    color: var(--darkGrey);
+    font-size: 14px;
+    font-family: var(--paragraphs);
+}
+
+.contact-names {
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;   
+    align-items: ce;
+}
+
+.form-button{
+    display: block;
+    margin: auto;
+}
+
+.contact-p-text{
+    font-family: var(--paragraphs);
+}
+
+.form-data {
+    width: 33.4%;
+}
+.form-message{
+    width: 100%;
+}
+
+.form-data-text{
+    height: 40px;
+}
+
+.contact-container input, textarea{   
+    font-family: var(--paragraphs);
+    line-height: 1.5;
+    border: 1px solid var(--darkGrey);
+    padding: 5px 10px;
+}
 
 
 /* ----------------------------
