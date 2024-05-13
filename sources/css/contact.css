@@ -203,6 +203,12 @@ button {
     justify-content: center;
 }
 
+
+.contact-p-text{
+    display: block;
+    width: 50%;
+}
+
 .form-data{
     display: flex;
     flex-direction: column;
