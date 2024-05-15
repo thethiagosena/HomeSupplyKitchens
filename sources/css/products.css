@@ -95,7 +95,7 @@ button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: var(--maxWidthLaptop);
+    max-width: var(--screenSize);
 }
 
 .nav-list {
@@ -163,7 +163,7 @@ button {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: var(--maxWidthLaptop);
+    max-width: var(--screenSize);
     position: relative;
     margin: auto;
 }
@@ -200,7 +200,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
-    max-width: var(--maxWidthLaptop);
+    max-width: var(--screenSize);
     margin: auto;
     margin-top: 40px;
     padding-bottom: 50px;

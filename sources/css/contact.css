@@ -100,7 +100,7 @@ button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: var(--maxWidthLaptop);
+    max-width: var(--screenSize);
 }
 
 .nav-list {
