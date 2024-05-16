@@ -343,7 +343,7 @@ button {
 /* --- Media Query --- */
 /* ----------------------------------------- */
 
-
+/* --- Tablets --- */
 @media all and (max-width:820px) {
     .menu-div {
         flex-direction: column;
