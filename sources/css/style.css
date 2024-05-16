@@ -680,7 +680,7 @@ button {
 
   .nav-bar {
     height: 60px;
-
+    margin-bottom: 10px;
   }
 
   .product02Title {
@@ -689,7 +689,5 @@ button {
 
   .logos{
     width: 50%;
-  }
-
- 
+  } 
 }
