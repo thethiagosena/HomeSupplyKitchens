@@ -369,3 +369,78 @@ textarea {
         text-align: center;
     }
 }
+
+/* --- Mobile --- */
+@media all and (max-width: 480px) {
+    /* --- Menu --- */
+    .menu-div {
+        flex-direction: column;
+    }
+
+    .nav-list .list-items {
+        display: block;
+        padding: 10px;
+    }
+
+    .nav-list {
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        margin: auto;
+        display: none;
+        z-index: 1;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+
+    .menu-hamburguer:hover {
+        cursor: pointer;
+    }
+
+
+    .logo {
+        height: 60px;
+    }
+
+    .active {
+        display: block;
+
+    }
+
+    .nav-bar {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    /* --- Elements --- */
+    .contact-text-container {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-p-text {        
+        margin: auto;
+    }
+
+    .contact-container {
+        padding: 0px;
+    }
+
+    .contact-form-bg * {
+        text-align: center;
+    }
+
+    .contact-names{
+        flex-direction: column;
+    }
+
+    .form-data{
+        width: 100%;
+    }   
+}

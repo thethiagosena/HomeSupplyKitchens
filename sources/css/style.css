@@ -693,7 +693,7 @@ button {
 }
 
 /* --- Mobile --- */
-@media all and (max-width: 820px) {
+@media all and (max-width: 480px) {
   .menu-div {
     flex-direction: column;
   }
